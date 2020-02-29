@@ -1,0 +1,46 @@
+.button {
+  padding: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .4s;
+  font-weight: 700;
+  border-radius: 5px;
+  min-width: 266px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.button--contact {
+  border: 2px solid $white;
+  color: $white;
+  background-color: transparent;
+    
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $purple;
+  }
+}
+
+.button--newsletter {
+    border: 2px solid $black;
+    color: $black;
+    display: block;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: $purple;
+      border-color: $purple;
+      color: $white;
+    }
+}
+
+@media screen and (min-width: 1276px) {
+  .button--contact {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .button--newsletter {
+    width: 100%;
+  }
+}

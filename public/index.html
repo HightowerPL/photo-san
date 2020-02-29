@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Eura7 ZR</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="css/assets/logo.svg" alt="Logo">
+            </div>
+            <div class="header__nav nav js-nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">O mnie</li>
+                    <li class="nav__list-item">Wspołpraca</li>
+                    <li class="nav__list-item">Portfolio</li>
+                    <li class="nav__list-item">Opinie</li>
+                    <li class="nav__list-item">
+                        <a href="#contact">
+                            Kontakt
+                        </a>
+                    </li>
+    
+                </ul>
+                <div class="nav__lang">
+    
+                </div>
+            </div>
+            <div class="header__burger js-burger">
+                <img src="css/assets/btn.svg" alt="burger_nav">
+            </div>
+        </div>
+    </div>
+
+</header>
+<section class="gallery">
+    <div class="gallery__photo-wrapper"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper mobile-hidden"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper mobile-hidden"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper mobile-hidden"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper mobile-hidden"><div class="gallery__photo"></div></div>
+    <div class="gallery__photo-wrapper mobile-hidden"><div class="gallery__photo"></div></div>
+</section>
+<section class="icons">
+    <div class="container">
+        <div class="icons__content">
+            <div class="icons__icon-box">
+                <img src="css/assets/i1.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i2.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i3.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i4.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i5.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i6.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i7.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i8.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i9.png" alt="icon">
+            </div>
+            <div class="icons__icon-box">
+                <img src="css/assets/i10.png" alt="icon">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="contact__text--heading">Kontakt</h2>
+        <div class="contact__form form">
+
+                <div class="form__box">
+                    <div class="form__el-wrapper  form__el-wrapper--mail">
+                        <label class="label label--name" for="name">Imię</label>
+
+                        <input class="input input--name" name="name" type="text"></input>
+                    </div>
+                    <div class="form__el-wrapper  form__el-wrapper--mail">
+                        <label class="label label--mail" for="name" >Mail</label>
+
+                        <input class="input input--mail" type="text" ></input>
+                    </div>
+                    <div class="form__el-wrapper">
+                        <p class="contact__text--select">Jestem:</p>
+                        <div class="form__el-wrapper form__el-wrapper--radio">
+                            <input class="input--radio" name="type" id="model" type="radio"></input>
+                            <label class="label label--select" for="model">Modelką</label>
+                        </div>
+                        <div class="form__el-wrapper form__el-wrapper--radio ">
+                            <input class="input--radio" name="type" id="client" type="radio"></input>
+                            <label class="label label--select" for="client" >Klientką</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__box">
+                    <div class="form__el-wrapper  form__el-wrapper--select">
+                        <label class="label label--subject" for="subject">Wybierz temat</label>
+                        <select class="select select--subject" name="subject" id="subject">
+                            <option value=""></option>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Portrait">Portrait</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form__el-wrapper  form__el-wrapper--textarea">
+                        <label class="label label--msg" for="client">Treść wiadomości</label>
+                        <textarea class="textarea textarea--msg" name="message" id="msg" cols="30" rows="10" ></textarea>
+                    </div>
+                </div> 
+                <div class="form__box">
+                    <div class="form__el-wrapper form__el-wrapper--consent">
+                        <input class="input--checkbox"type="checkbox" name="consent" id="consent" class="checkbox"></input>
+                        <label class="label label--consent" for="consent" hidden>Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+                    </div>
+                    <button class="button button--contact">Wyślij wiadomość</button>
+
+                </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="css/assets/logo.svg" alt="Logo">
+            </div>
+            <div class="footer__social">
+                <img class="footer__social-img" src="css/assets/f_logo_RGB-Black_1024.png" alt="social_fb">
+                <img class="footer__social-img" src="css/assets/twitter.png" alt="social_twit">
+                <img class="footer__social-img" src="css/assets/insta.png" alt="social_insta">
+                <img class="footer__social-img" src="css/assets/behance.png" alt="social_be">
+
+            </div>
+            <div class="footer__newsletter">
+                <p class="footer__text--newsletter">Tipy, techniki i nowości<br>na rynku fotograficznym</p>
+                <button class="button button--newsletter">Newsletter</button>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+</html>

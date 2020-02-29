@@ -1,0 +1,12 @@
+.container {
+    max-width: 1244px;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 1276px) {
+    .mobile-hidden {
+        display: none;
+    }
+}

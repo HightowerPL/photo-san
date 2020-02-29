@@ -1,0 +1,47 @@
+.nav {
+    display: none;
+
+    position: fixed;
+    top:0; 
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, .85);
+
+    list-style: none;
+    text-align: center;
+}
+
+.nav__list {
+    text-align: right;
+    font-size: 36px;
+}
+
+.nav__list-item {
+    transition: .4s;
+    margin-bottom: 40px;
+    cursor: pointer;
+    &:hover {
+        color: $purple;
+    }
+}
+
+@media screen and (min-width: 1272px) {
+    .nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+    }
+    .nav__list{
+        display: inline-flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .nav__list-item {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+}

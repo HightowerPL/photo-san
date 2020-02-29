@@ -1,0 +1,93 @@
+
+.gallery {
+    padding-top: 116px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.gallery__photo-wrapper {
+    min-height: 360px;
+    overflow: hidden;
+    display: grid;
+    &:hover div {
+        transform: scale(1.1);
+    }
+    &:nth-child(1) div {
+        background-image: url('assets/g1.jpg');
+    }
+    &:nth-of-type(2) div {
+        background-image: url('assets/g2.jpg');
+    }
+    &:nth-of-type(3) div {
+        background-image: url('assets/g3.jpg');
+    }
+    &:nth-of-type(4) div{
+        background-image: url('assets/g4.jpg');
+    }
+    &:nth-of-type(5) div{
+        background-image: url('assets/g5.jpg');
+    }
+}
+
+.gallery__photo {
+    width: 100%;
+    height:100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: .4s;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        padding-top: 116px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+
+    .gallery__photo-wrapper {
+        &:nth-of-type(1) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-position: bottom center;
+        }
+    }
+}
+
+@media screen and (min-width: 1272px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+
+    .gallery__photo-wrapper {
+        &:nth-of-type(5) div {
+          background-image: url('assets/g7.jpg');
+        }
+        &:nth-of-type(6) div {
+          background-image: url('assets/g6.jpg');
+        }
+        &:nth-of-type(7)  div{
+          background-image: url('assets/g5.jpg');
+       }
+        &:nth-of-type(8) div{
+          background-image: url('assets/g8.jpg');
+        }
+        &:nth-of-type(9) div{
+          background-image: url('assets/g9.jpg');
+        }
+        &:nth-of-type(10) {
+          grid-column-start: 3;
+          grid-column-end: 5;
+          div {
+            background-image: url('assets/g10.jpg');
+          }     
+        }
+    }
+}
